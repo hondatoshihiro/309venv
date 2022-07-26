@@ -54,7 +54,7 @@ def main():
             prenum = int(datedata["npatients"])
             cnt = cnt+1
     plt.xlabel("date", fontsize=12)
-    plt.ylabel("patients", fontsize=12)
+    plt.ylabel("patients(7days-average)", fontsize=12)
     plt.xticks(np.arange(0, len(gdatelist), 50), rotation="vertical")
     plt.plot(gdatelist, gpatientsnumlist, 'b-')
     plt.show()
