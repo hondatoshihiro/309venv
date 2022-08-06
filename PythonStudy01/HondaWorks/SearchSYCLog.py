@@ -1,7 +1,4 @@
-from distutils.dep_util import newer_group
-from encodings import utf_8
 import os
-from telnetlib import NOP
 
 def main():
     collect_log("d:\\work\\test")
@@ -26,7 +23,7 @@ def collect_log(target_path):
                 search_log(target_wkpath)
             else:
                 #*.lgfファイル以外は何もしない
-                NOP
+                pass
 
 def search_log(target_path):
     result_file = open("result_log.txt", "a", encoding="utf_8")
@@ -37,10 +34,9 @@ def search_log(target_path):
             if jdg == True:
                 #結果ファイルに書き込む
                 result_file.write(line)
-                NOP
             else:
                 #何もしない
-                NOP
+                pass
     result_file.close()
 
 if __name__ == '__main__':
