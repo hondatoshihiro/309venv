@@ -1,3 +1,9 @@
+#写真の移動コピー(日付毎のフォルダに分類)
+#D:\Python\venv\309venv\PythonStudy01\FileCopy.iniの設定を変更(入出力設定)
+#PS D:\Python\venv\309venv>cd .\.309venv\Scripts
+#PS D:\Python\venv\309venv\.309venv\Scripts>./Activate.ps1
+#PS D:\Python\venv\309venv\.309venv\Scripts>cd ..\..
+#PS D:\Python\venv\309venv\PythonStudy01>py FileCopy.py
 import os
 import logging
 import datetime
